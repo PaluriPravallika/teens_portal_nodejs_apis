@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 const usersController = require('../controllers/users.controller');
 
-/* GET users listing. */
-router.get('/:id', usersController.get);
+// /* GET users listing. */
+// router.get('/', usersController.get);
 
 /* GET users listing. */
 router.get('/:id', usersController.get);
@@ -12,9 +12,9 @@ router.get('/:id', usersController.get);
 router.post('/', usersController.create);
 
 /* PATCH users listing. */
-router.patch('/', usersController.update);
+router.patch('/:id', usersController.update);
 
 /* DELETE users listing. */
-router.delete('/', usersController.remove);
+router.delete('/:id', usersController.remove);
 
 module.exports = router;
