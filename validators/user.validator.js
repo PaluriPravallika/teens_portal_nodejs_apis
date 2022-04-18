@@ -2,14 +2,12 @@ const Joi = require('joi');
 
 const schema = Joi.object({
     firstname: Joi.string()
-        .alphanum()
         .min(3)
         .max(45)
         .required()
         .label('First Name'),
 
     lastname: Joi.string()
-        .alphanum()
         .min(3)
         .max(45)
         .required()
@@ -18,7 +16,6 @@ const schema = Joi.object({
         .max(45)
         .label('Middle Name'),
     suffix: Joi.string()
-        .alphanum()
         .max(45),
     email: Joi.string()
         .required().label('Email')
@@ -27,8 +24,7 @@ const schema = Joi.object({
     street_address: Joi.string()
         .max(200),
     city: Joi.string()
-        .max(100)
-        .alphanum(),
+        .max(100),
     type: Joi.string(),
     state: Joi.string(),
     zip: Joi.string().max(5),
