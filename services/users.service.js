@@ -18,7 +18,6 @@ async function update(id, user) {
 
 async function remove(id) {
     return { message: `remove user` };
- 
 }
 
 module.exports = {
