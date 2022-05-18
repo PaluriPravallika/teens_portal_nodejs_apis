@@ -29,7 +29,6 @@ const schema = Joi.object({
     type: Joi.string(),
     state: Joi.string(),
     zip: Joi.string().max(5),
-    ssno: Joi.string().max(4),
     birth_date: Joi.date().less('now'),
     memo: Joi.string(),
     previous_mailing_address: Joi.string(),

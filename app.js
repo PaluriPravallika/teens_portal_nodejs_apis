@@ -6,6 +6,8 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+console.log("hello change 1")
+
 var app = express();
 
 if (process.env.NODE_ENV !== 'production') {
