@@ -21,4 +21,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+console.log('changes from branch 3')
 module.exports = app;
